@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Coffee Delivery Service</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Coffee Powder Delivery Service</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#order">Order</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="about">
+			<h2>About Us</h2>
+			<p>At Coffee Powder Delivery Service, we're passionate about providing our customers with the best
+                quality and freshly roasted coffee powder delivered right to their door. 
+            </p>
+            </section>
+            		<section id="menu">
+		<h2>Menu</h2>
+
+		<div class="row">
+			<div class="column">
+				<h2>ORIGINAL</h2>
+				<a href="jantar_mantar.html">
+			  <img src="original.jpeg" alt="Jantar Mantar" style="width:100%">
+			</a>
+			  <figcaption style="font-size: 1.25vw">
+				Looking for a coffee experience that is simply unforgettable? Look no further than our original coffee powder. Made from the highest quality coffee beans, carefully selected and expertly roasted, our coffee powder is the perfect choice for coffee lovers who demand nothing but the best.
+		</div>
+		
+		    <div class="column">
+				<h2>CARAMEL</h2>
+				<a href="jantar_mantar.html">
+			  <img src="caramel.webp" alt="Jantar Mantar" style="width:100%">
+			</a>
+			  <figcaption style="font-size: 1.25vw">What is caramel Flavour coffee?
+				Caramel coffee is a type of coffee that has been infused with the flavor of caramel. It's made from brewed coffee, caramel sauce, and milk
+			</figcaption>
+		</div>
+		
+		
+			<div class="column">
+				<h2>VANILLA</h2>
+				<a href="jantar_mantar.html">
+			  <img src="vanilla.png" alt="Jantar Mantar" style="width:100%">
+			</a>
+			  <figcaption style="font-size: 1.25vw">
+				coffee made with vanilla syrup, vanilla extract, or vanilla coffee creamer to flavor the coffee with vanilla. 			</figcaption>
+		</div>
+		
+		
+			<div class="column">
+				<h2>CHOCOLATE</h2>
+				<a href="jantar_mantar.html">
+			  <img src="chocolate.jpeg" alt="Jantar Mantar" style="width:100%">
+			</a>
+			  <figcaption style="font-size: 1.25vw">
+				The Chocolate Coffee Powder gives the taste of sipping coffee and munching a chocolate at the same time.
+			</figcaption>
+		</div>
+		
+			<div class="column">
+				<h2>HAZELNUT</h2>
+				<a href="jantar_mantar.html">
+			  <img src="hazelnut.webp" alt="Jantar Mantar" style="width:100%">
+			</a>
+			  <figcaption style="font-size: 1.25vw">
+				Hazelnut coffee is a flavored coffee with hazelnut as its primary flavor. It is typically made by adding hazelnut extract or hazelnut flavoring to coffee grounds before brewing or using hazelnut-flavored coffee beans.			</figcaption>
+		</div>
+		</div>
+	
+
+	<section id="order">
+		<h2>Order</h2>
+		<form action="submit_order.php" method="POST">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" required>
+
+			<label for="address">Address:</label>
+			<input type="text" id="address" name="address" required>
+
+			<label for="coffee">Coffee:</label>
+			<select id="coffee" name="coffee" required>
+				<option value="">--Select--</option>
+				<option value="Original">Original</option>
+				<option value="Caramel">Caramel</option>
+				<option value="Vanilla">Vanilla</option>
+				<option value="Chocolate">Chocolate</option>
+				<option value="Hazelnut">Hazelnut</option>
+			</select>
+
+			<label for="quantity">Quantity:</label>
+			<input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+			<input type="submit" value="Order Now">
+		</form>
+	</section>
+
+
+<footer>
+	<p>&copy; 2023 Coffee Powder Delivery Service</p>
+</footer>
+

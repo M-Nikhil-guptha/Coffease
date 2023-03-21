@@ -1,0 +1,13 @@
+.column {
+   
+    float: left;
+    width: 30.33%;
+    background-color: whitesmoke;
+    border: 15px palegreen;
+    padding: 50px;
+    margin:20px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
